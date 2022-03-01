@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <String name="Player1">
+        Score %d
+    </String>
+    <String name="Player2">
+        Score %d
+    </String>
+</resources>
