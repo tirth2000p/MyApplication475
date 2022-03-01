@@ -2,25 +2,24 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/homePageFragment">
-
+    android:id="@+id/my_nav_graph"
+    app:startDestination="@id/homePageFragment2">
     <fragment
-        android:id="@+id/homePageFragment"
+        android:id="@+id/homePageFragment2"
         android:name="com.example.myapplication.homePageFragment"
         android:label="fragment_home_page"
-        tools:layout="@layout/fragment_home_page">
+        tools:layout="@layout/fragment_home_page" >
         <action
-            android:id="@+id/action_homePageFragment_to_settingFragment"
-            app:destination="@id/settingFragment" />
+            android:id="@+id/action_homePageFragment2_to_settingFragment2"
+            app:destination="@id/settingFragment2" />
     </fragment>
     <fragment
-        android:id="@+id/settingFragment"
+        android:id="@+id/settingFragment2"
         android:name="com.example.myapplication.SettingFragment"
         android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting">
+        tools:layout="@layout/fragment_setting" >
         <action
-            android:id="@+id/action_settingFragment_to_homePageFragment"
-            app:destination="@id/settingFragment" />
+            android:id="@+id/action_settingFragment2_to_homePageFragment2"
+            app:destination="@id/homePageFragment2" />
     </fragment>
 </navigation>
