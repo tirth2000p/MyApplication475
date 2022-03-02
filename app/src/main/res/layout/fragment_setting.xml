@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingFragment"
+    tools:context=".settingFragment"
     android:background="#5CDB95"
     >
 
@@ -16,7 +16,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/text"
             android:layout_width="312dp"
             android:layout_height="94dp"
             android:capitalize="words"
@@ -44,15 +44,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/text" />
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="276dp"
             android:layout_height="91dp"
             android:layout_marginTop="24dp"
-            android:entries="@array/language_options"
-            android:textSize="20sp"
+            android:paddingRight="10dp"
+            android:spinnerMode="dialog"
+            android:entries="@array/list"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"

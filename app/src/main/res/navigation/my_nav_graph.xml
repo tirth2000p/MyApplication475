@@ -3,23 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav_graph"
-    app:startDestination="@id/homePageFragment2">
+    app:startDestination="@id/home_page_Fragment">
+
     <fragment
-        android:id="@+id/homePageFragment2"
-        android:name="com.example.myapplication.homePageFragment"
-        android:label="fragment_home_page"
-        tools:layout="@layout/fragment_home_page" >
+        android:id="@+id/home_page_Fragment"
+        android:name="com.example.squaregame.home_page_Fragment"
+        android:label="fragment_home_page_"
+        tools:layout="@layout/fragment_home_page_" >
         <action
-            android:id="@+id/action_homePageFragment2_to_settingFragment2"
-            app:destination="@id/settingFragment2" />
+            android:id="@+id/action_home_page_Fragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
     </fragment>
     <fragment
-        android:id="@+id/settingFragment2"
-        android:name="com.example.myapplication.SettingFragment"
+        android:id="@+id/settingFragment"
+        android:name="com.example.squaregame.settingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" >
         <action
-            android:id="@+id/action_settingFragment2_to_homePageFragment2"
-            app:destination="@id/homePageFragment2" />
+            android:id="@+id/action_settingFragment_to_home_page_Fragment2"
+            app:destination="@id/home_page_Fragment" />
     </fragment>
 </navigation>
