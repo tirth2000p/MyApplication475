@@ -17,10 +17,16 @@ import com.example.myapplication.databinding.FragmentSecondBinding;
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
-
-
-
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // Fragment locked in portrait screen orientation
+        }
+
+
+
+        @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
@@ -50,7 +56,7 @@ public class SecondFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                        .navigate(R.id.action_SecondFragment_to_firstFragment);
             }
         });
     }

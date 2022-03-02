@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homePageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5CDB95"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="411dp"
+            android:layout_height="202dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/screen_shot_2022_02_25_at_9_55_38_pm" />
+
+        <Button
+            android:id="@+id/multipliers"
+            android:layout_width="296dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#05386B"
+            android:fontFamily="@font/chango"
+            android:text="P1 VS P2"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/sole_player"
+            android:layout_width="296dp"
+            android:layout_height="109dp"
+            android:backgroundTint="#05386B"
+            android:fontFamily="@font/chango"
+            android:text="Sole Player"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multipliers"
+            app:layout_constraintVertical_bias="0.405" />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="251dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="120dp"
+            android:backgroundTint="#05386B"
+            android:fontFamily="@font/chango"
+            android:text="Setting"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
