@@ -6,5 +6,9 @@
         <item>5 X 4</item>
         <item>7 X 9</item>
     </array>
+    <array name="language_options">
+        <item>English </item>
+        <item>Español </item>
 
+    </array>
 </resources>
