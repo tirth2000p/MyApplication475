@@ -14,4 +14,11 @@
     <string name="Player1">        Score %d    </string>
     <string name="Player2">        Score %d    </string>
 
+    <string name="language_options">Custom Spinner</string>
+
+    <string-array name="list">
+        <item>English</item>
+        <item>Espanol</item>
+    </string-array>
+
 </resources>

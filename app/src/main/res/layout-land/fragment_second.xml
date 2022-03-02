@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinner2"
         android:layout_width="368dp"
         android:layout_height="75dp"
         android:background="#05386B"
