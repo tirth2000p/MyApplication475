@@ -49,7 +49,7 @@ public class SecondFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_SecondFragment_to_blankFragment);
+                navController.navigate(R.id.action_SecondFragment_to_gameActivity);
             }
         });
 

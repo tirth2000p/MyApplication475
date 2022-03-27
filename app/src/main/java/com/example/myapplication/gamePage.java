@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,7 +25,5 @@ public class gamePage extends AppCompatActivity {
         DAB.initN(grid_size, number_of_players, names);
     }
 
-    public void undo(View view) {
-        DAB.undo();
-    }
+
 }

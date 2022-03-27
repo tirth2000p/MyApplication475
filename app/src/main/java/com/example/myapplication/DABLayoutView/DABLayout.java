@@ -208,42 +208,6 @@ public class DABLayout extends View {
         }
     }
 
-    public void undo() {
-        if(c>0) {
-            turn = turn_keeper.elementAt(turn_keeper.size() - 1);
-            turn_keeper.remove(turn_keeper.size() - 1);
-            if (k>0) {
-                if ((winner_si[k - 1] == si[c - 1]) && (winner_sj[k - 1] == sj[c - 1]) && (winner_fi[k - 1] == fi[c - 1]) && (winner_fj[k - 1] == fj[c - 1])) {
-                    k--;
-                    if (repeat <= 1) {
-                        winner_checker.remove(winner_checker.size() - 1);
-                        repeat = 0;
-                    }
-                    else {
-                        winner_checker.remove(winner_checker.size() - 1);
-                        winner_checker.remove(winner_checker.size() - 1);
-                        System.out.println("UNDER UNDO-WINNER CHECKER");
-                        print_winner_checker();
-                        repeat = 0;
-                    }
-                }
-            }
-            sx[c - 1] = 0;
-            sy[c - 1] = 0;
-            fx[c - 1] = 0;
-            fy[c - 1] = 0;
-            c--;
-            change_a_neg();
-            check_b();
-            sound_effects.play(undo_sound_int, 1, 1, 0, 0, 1);
-            System.out.println("UNDO");
-            print_a();
-            print_b();
-            update_text();
-            vibrator.vibrate(100);
-            invalidate();
-        }
-    }
 
     private void setInitial(float x, float y) {
         for (int i = 0; i < n; i++) {

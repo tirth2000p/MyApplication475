@@ -89,7 +89,7 @@ public class resultPage extends AppCompatActivity {
 
     public void restart(View view) {
         sound_effects.play(button_sound_int,1,1,0,0,1);
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        startActivity(new Intent(getApplicationContext(), GameActivity.class));
         finish();
     }
 

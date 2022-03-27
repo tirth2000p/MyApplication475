@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_SecondFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_gameActivity"
+            app:destination="@id/gameActivity" />
     </fragment>
     <fragment
         android:id="@+id/blankFragment"
@@ -48,4 +51,9 @@
             android:id="@+id/action_firstFragment_to_settingFragment"
             app:destination="@id/settingFragment" />
     </fragment>
+    <activity
+        android:id="@+id/gameActivity"
+        android:name="com.example.myapplication.GameActivity"
+        android:label="game_activity"
+        tools:layout="@layout/game_activity" />
 </navigation>
