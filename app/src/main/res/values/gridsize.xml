@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <array
-        name="integer_array_name">
-        <item>6 X 8</item>
-        <item>5 X 4</item>
-        <item>7 X 9</item>
-    </array>
-</resources>
