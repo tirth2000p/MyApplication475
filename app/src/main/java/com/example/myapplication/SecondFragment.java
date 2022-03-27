@@ -45,6 +45,7 @@ public class SecondFragment extends Fragment {
 
         final NavController navController = Navigation.findNavController(view);
         Button button = view.findViewById(R.id.button);
+        // directs to gameactivity (blank fragment is empty
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
