@@ -1,12 +1,16 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -34,6 +38,7 @@ public class SecondFragment extends Fragment {
 
 
         binding = FragmentSecondBinding.inflate(inflater, container, false);
+
         return binding.getRoot();
 
     }
@@ -45,10 +50,25 @@ public class SecondFragment extends Fragment {
 
         final NavController navController = Navigation.findNavController(view);
         Button button = view.findViewById(R.id.button);
+
+        // directs to gameactivity (blank fragment is empty
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_SecondFragment_to_blankFragment);
+
+                int var ;
+                Spinner spinner = (Spinner) v.findViewById(R.id.spinner2);
+
+                //String spin = spinner.getSelectedItem().toString();
+
+                System.out.println(spinner);
+
+                // good from here
+                var = 5;
+                Intent i = new Intent(getActivity(), GameActivity.class);
+                i.putExtra("var", var);
+                startActivity(i);
+
             }
         });
 

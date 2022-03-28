@@ -12,20 +12,11 @@
         tools:layout="@layout/fragment_second">
 
         <action
-            android:id="@+id/action_SecondFragment_to_blankFragment"
-            app:destination="@id/blankFragment" />
-        <action
             android:id="@+id/action_SecondFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/blankFragment"
-        android:name="com.example.myapplication.BlankFragment"
-        android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" >
         <action
-            android:id="@+id/action_blankFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_SecondFragment_to_gameActivity"
+            app:destination="@id/gameActivity" />
     </fragment>
     <fragment
         android:id="@+id/settingFragment"
@@ -48,4 +39,9 @@
             android:id="@+id/action_firstFragment_to_settingFragment"
             app:destination="@id/settingFragment" />
     </fragment>
+    <activity
+        android:id="@+id/gameActivity"
+        android:name="com.example.myapplication.GameActivity"
+        android:label="game_activity"
+        tools:layout="@layout/game_activity" />
 </navigation>

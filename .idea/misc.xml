@@ -3,12 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/font/chango.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout-land/fragment_first.xml" value="0.15211640211640212" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout-land/fragment_second.xml" value="0.15211640211640212" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout-land/fragment_setting.xml" value="0.2" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/activity_game_page.xml" value="0.2" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/activity_result_page.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/content_main.xml" value="0.22192028985507245" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/custom_spinner.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/custom_spinner_dropdown.xml" value="0.23278985507246377" />
-        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/fragment_first.xml" value="0.22192028985507245" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/fragment_blank.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/fragment_home_page.xml" value="0.1796875" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/fragment_second.xml" value="0.22192028985507245" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/fragment_setting.xml" value="0.3" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/game_activity.xml" value="0.1" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/spinner_item.xml" value="0.1796875" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/menu/menu_main.xml" value="0.23489583333333333" />
       </map>
     </option>
   </component>
