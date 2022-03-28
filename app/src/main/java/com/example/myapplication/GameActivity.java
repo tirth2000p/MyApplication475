@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class GameActivity extends AppCompatActivity {
 
 
-    int grid_size =3;
+
     int number_of_players =2;
     String [] names = {"P 1", "P 2"};
 
@@ -17,6 +17,10 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_activity);
+
+        int grid_size = getIntent().getExtras().getInt("var");
+
+
 
         /*  Game start code */
 
