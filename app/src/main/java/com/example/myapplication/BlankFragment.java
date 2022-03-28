@@ -70,7 +70,7 @@ public class BlankFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //   navController.navigate(R.id.action_blankFragment_to_SecondFragment);
+                navController.navigate(R.id.action_blankFragment_to_SecondFragment);
             }
         });
     }
