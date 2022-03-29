@@ -52,10 +52,12 @@ public class SecondFragment extends Fragment {
 
         final NavController navController = Navigation.findNavController(view);
         Button button = view.findViewById(R.id.button);//
+
+
         Spinner spinner = (Spinner) view.findViewById(R.id.spinner2);
         spin = spinner.getSelectedItem().toString();
         spin = spin.substring(0,1);
-        //System.out.println(spin);
+        System.out.println(spin);
 
 
 
