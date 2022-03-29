@@ -398,12 +398,9 @@ public class DABLayout extends View {
     }
 
     private void initialise_colors() {
-        paint_colors[0] = Color.RED;
-        paint_colors[1] = Color.BLUE;
-        paint_colors[2] = Color.GREEN;
-        paint_colors[3] = Color.YELLOW;
-        paint_colors[4] = Color.CYAN;
-        paint_colors[5] = Color.rgb(255, 165, 0); //ORANGE
+        paint_colors[0] = Color.parseColor("#db5ca2");
+        paint_colors[1] = Color.parseColor("#701cfc");
+
     }
 
     public void is_end() {
