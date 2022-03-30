@@ -18,11 +18,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/screen_shot_2022_02_25_at_9_55_38_pm" />
 
+
     <Button
         android:id="@+id/multipliers"
         android:layout_width="296dp"
         android:layout_height="109dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="124dp"
         android:backgroundTint="#05386B"
         android:fontFamily="@font/chango"
         android:text="P1 VS P2"
@@ -31,23 +32,6 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="296dp"
-        android:layout_height="109dp"
-        android:backgroundTint="#05386B"
-        android:fontFamily="@font/chango"
-        android:text="Sole Player"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/settings"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/multipliers"
-        app:layout_constraintVertical_bias="0.405" />
-
-
 
     <Button
         android:id="@+id/settings"
