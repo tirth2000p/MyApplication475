@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.DABLayoutView.DABLayout;
@@ -17,6 +18,8 @@ public class gamePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_page);
         DAB = findViewById(R.id.dab);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         if (getIntent().getExtras() != null) {
             grid_size = getIntent().getExtras().getInt("grid");
             number_of_players = getIntent().getExtras().getInt("players");

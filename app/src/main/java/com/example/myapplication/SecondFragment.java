@@ -55,7 +55,9 @@ public class SecondFragment extends Fragment {
 
 
         Spinner spinner = (Spinner) view.findViewById(R.id.spinner2);
+
         spin = spinner.getSelectedItem().toString();
+
         spin = spin.substring(0,1);
         System.out.println(spin);
 
