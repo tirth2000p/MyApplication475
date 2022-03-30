@@ -30,8 +30,8 @@ public class resultPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+        ActionBar ACTIONbAR =   getSupportActionBar();
+        ACTIONbAR.hide();
         setContentView(R.layout.activity_result_page);
         scores = new int[6];
         result = findViewById(R.id.result1);

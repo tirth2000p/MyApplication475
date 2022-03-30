@@ -16,6 +16,8 @@ public class gamePage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar ACTIONbAR =   getSupportActionBar();
+        ACTIONbAR.hide();
         setContentView(R.layout.activity_game_page);
         DAB = findViewById(R.id.dab);
         ActionBar actionBar = getSupportActionBar();
