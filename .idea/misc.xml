@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Study/CMSC 475/MyApplication475/app/src/main/res/layout/activity_first_page.xml" value="0.25052083333333336" />
+        <entry key="..\:/Study/CMSC 475/MyApplication475/app/src/main/res/layout/activity_second_page.xml" value="0.25052083333333336" />
+        <entry key="..\:/Study/CMSC 475/MyApplication475/app/src/main/res/layout/activity_settings_page.xml" value="0.25052083333333336" />
         <entry key="..\:/Study/CMSC 475/MyApplication475/app/src/main/res/layout/fragment_first.xml" value="0.268" />
+        <entry key="..\:/Study/CMSC 475/MyApplication475/app/src/main/res/layout/fragment_setting.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/font/chango.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout-land/fragment_first.xml" value="0.15211640211640212" />
