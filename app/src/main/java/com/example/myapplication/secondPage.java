@@ -29,18 +29,18 @@ public class secondPage extends AppCompatActivity {
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner2);
 
-        spin = spinner.getSelectedItem().toString();
 
-        spin = spin.substring(0,1);
-        //Testing purpose
-        System.out.println(spin);
 
 
         // directs to gameactivity (blank fragsment is empty
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                spin = spinner.getSelectedItem().toString();
 
+                spin = spin.substring(0,1);
+                //Testing purpose
+                System.out.println(spin);
                 int var = Integer.parseInt(spin);
                 System.out.println(var);
 
