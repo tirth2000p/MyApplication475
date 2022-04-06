@@ -11,6 +11,8 @@ import android.widget.Spinner;
 
 public class settingsPage extends AppCompatActivity {
 
+    private boolean Sound = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +26,36 @@ public class settingsPage extends AppCompatActivity {
 
         Button buttonTheme = findViewById(R.id.theme);
 
+
+
         Button button3 = findViewById(R.id.button3);
+
+        button3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+
+                Sound = !Sound;
+
+                if(Sound){
+
+                    //change text
+
+                    // turn on sound
+
+                }
+                else{
+
+                    //change text
+
+                    // turn off sound
+                }
+
+            }
+
+        });
+
+
 
         Button button4 = findViewById(R.id.button4);
 
@@ -34,7 +65,7 @@ public class settingsPage extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent i = new Intent(getApplicationContext(),MainActivity.class); // change to settings
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
             }
 
