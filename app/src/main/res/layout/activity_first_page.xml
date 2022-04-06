@@ -8,6 +8,7 @@
     android:fontFamily="@font/chango"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="411dp"
