@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDF5E1"
+    android:background="@color/colorFont"
     tools:context=".resultPage">
 
     <ImageView
@@ -51,13 +51,13 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="109dp"
-        android:layout_height="78dp"
-        android:background="@color/colorAccent"
-        android:textColor="#EDF5E1"
-        android:fontFamily="casual"
+        android:layout_width="151dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/chango"
         android:onClick="restart"
         android:text="Restart"
+        android:textColor="@color/colorFont"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
