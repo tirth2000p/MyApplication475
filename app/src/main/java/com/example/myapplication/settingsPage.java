@@ -31,6 +31,7 @@ public class settingsPage extends AppCompatActivity {
         Spinner spinner = (Spinner) findViewById(R.id.spinner); // gotta work on spinner settings
 
 
+
         ToggleButton switchTheme = findViewById(R.id.theme);
         SharedPreferences sharedPreferences = getSharedPreferences("save", MODE_PRIVATE);
         switchTheme.setChecked(sharedPreferences.getBoolean("value", true));
