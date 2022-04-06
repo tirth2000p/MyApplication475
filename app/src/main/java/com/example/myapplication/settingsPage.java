@@ -4,8 +4,10 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -65,33 +67,43 @@ public class settingsPage extends AppCompatActivity {
         });
 
 
-        Button button3 = findViewById(R.id.button3);
+        ToggleButton button3 = findViewById(R.id.button3);
         button3.setText(SoundVal);
-        button3.setOnClickListener(new View.OnClickListener(){
+        SharedPreferences sharedPreferences2 = getSharedPreferences("save2", MODE_PRIVATE);
+        button3.setChecked(sharedPreferences2.getBoolean("value2", true));
+        if (button3.isChecked()) {
+            AudioManager amanager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+            amanager.setStreamMute(AudioManager.STREAM_NOTIFICATION, true);
+        }
+        else {
+            AudioManager amanager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+            amanager.setStreamMute(AudioManager.STREAM_NOTIFICATION, false);
+        }
+
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
+            public void onClick(View view)
             {
+                boolean clicked = button3.isChecked();
+                if(clicked) {
 
-                Sound = !Sound;
+                    AudioManager amanager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+                    amanager.setStreamMute(AudioManager.STREAM_NOTIFICATION, true);
 
-                if(Sound){
-
-                    //change text
-                SoundVal = "Sound: On";
-                button3.setText(SoundVal);
-                    // turn on sound
-
+                    SharedPreferences.Editor editor = getSharedPreferences("save2", MODE_PRIVATE).edit();
+                    editor.putBoolean("value2", true);
+                    editor.apply();
+                    button3.setChecked(true);
                 }
-                else{
-
-                    //change text
-                SoundVal = "Sound: Off";
-                button3.setText(SoundVal);
-                    // turn off sound
+                else {
+                    AudioManager amanager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+                    amanager.setStreamMute(AudioManager.STREAM_NOTIFICATION, false);
+                    SharedPreferences.Editor editor = getSharedPreferences("save2", MODE_PRIVATE).edit();
+                    editor.putBoolean("value2",false);
+                    editor.apply();
+                    button3.setChecked(false);
                 }
-
             }
-
         });
 
 

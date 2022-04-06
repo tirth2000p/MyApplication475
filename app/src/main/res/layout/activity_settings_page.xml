@@ -35,7 +35,8 @@
             android:backgroundTint="@color/colorAccent"
             android:fontFamily="@font/chango"
             android:textAlignment="center"
-            android:text="Theme"
+            android:textOff="DarkMode: Off"
+            android:textOn="DarkMode: On"
             android:textSize="30sp"
             android:textColor="@color/colorFont"
             app:layout_constraintEnd_toEndOf="parent"
@@ -57,14 +58,15 @@
             app:layout_constraintTop_toBottomOf="@+id/theme" />
 
 
-        <Button
+        <ToggleButton
             android:id="@+id/button3"
             android:layout_width="276dp"
             android:layout_height="91dp"
             android:layout_marginTop="24dp"
             android:backgroundTint="@color/colorAccent"
             android:fontFamily="@font/chango"
-            android:text="Sound: On"
+            android:textOff="Sound: On"
+            android:textOn="Sound: Off"
             android:textSize="30sp"
             android:textColor="@color/colorFont"
             app:layout_constraintEnd_toEndOf="parent"
