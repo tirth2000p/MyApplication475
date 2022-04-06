@@ -13,8 +13,6 @@
             android:id="@+id/textView"
             android:layout_width="312dp"
             android:layout_height="94dp"
-            android:capitalize="words"
-
             android:fontFamily="@font/aclonica"
             android:text="Setting"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
@@ -60,7 +58,7 @@
             android:layout_marginTop="24dp"
             android:backgroundTint="#05386B"
             android:fontFamily="@font/chango"
-            android:text="Sound: On"
+            android:text=""
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
