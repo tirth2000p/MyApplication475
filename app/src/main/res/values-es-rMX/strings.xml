@@ -16,23 +16,25 @@
     <string name="Player2">        Score %d    </string>
 
     <string name="language_options">Custom Spinner</string>
-    <string name="player">P1 vs P2</string>
-    <string name="Setting">Setting</string>
-    <string name="Version">Version 0.1</string>
-    <string name="Move">Number Of Moves</string>
-    <string name="Turn">X Turn</string>
-    <string name="Menu">Menu</string>
-    <string name="Score1">Player1:</string>
-    <string name="Score2">Player2:</string>
-    <string name="Winner">And the winner is:</string>
-    <string name="Winner_Name">Winner</string>
-    <string name="Restart">Restart</string>
-    <string name="Start">Start</string>
-    <string name="Dark_Off">DarkMode: Off</string>
-    <string name="Dark_On">DarkMode: On</string>
-    <string name="Sound_On">Sound: On</string>
-    <string name="Sound_Off">Sound: Off</string>
-    <string name="Back">Back</string>
+    <string name="player">P1 frente a P2</string>
+    <string name="Setting">Ajuste</string>
+    <string name="Version">Versión 1.0</string>
+    <string name="Move">Número de movimientos</string>
+    <string name="Turn">giro x</string>
+    <string name="Menu">Menú</string>
+    <string name="Score1">Jugador 1:</string>
+    <string name="Score2">jugador2:</string>
+    <string name="Winner">Y el ganador es:</string>
+    <string name="Winner_Name">Ganador</string>
+    <string name="Restart">Reiniciar</string>
+    <string name="Start">Comienzo</string>
+    <string name="Dark_Off">Modo oscuro: apagado</string>
+    <string name="Dark_On">Modo oscuro: activado</string>
+    <string name="Sound_On">Sonido encendido</string>
+    <string name="Sound_Off">Sonido apagado</string>
+    <string name="Back">Atrás</string>
+
+
 
 
 
