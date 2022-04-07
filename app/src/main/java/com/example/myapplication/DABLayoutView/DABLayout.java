@@ -388,7 +388,7 @@ public class DABLayout extends View {
         }
     }
 
-    
+
 
     private void update_score() {
 

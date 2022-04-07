@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="@font/chango"
-        android:text="Start"
+        android:text="@string/Start"
         android:textColor="@color/colorFont"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"

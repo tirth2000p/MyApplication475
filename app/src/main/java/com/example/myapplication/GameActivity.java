@@ -16,7 +16,7 @@ public class GameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game_activity);
+
 
         int grid_size = getIntent().getExtras().getInt("var");
 
