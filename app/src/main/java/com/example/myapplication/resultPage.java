@@ -25,7 +25,10 @@ public class resultPage extends AppCompatActivity {
     private Vector<Integer> winners;
     private int player_no, max, button_sound_int;
     private TextView result;
+    private TextView W;
     private ImageView my_image;
+    private boolean draw = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,10 +67,15 @@ public class resultPage extends AppCompatActivity {
     }
 
     private void get_winners() {
-        for (int i = 0; i < player_no; i++) {
+        int i = 0;
+        for (i = 0; i < player_no; i++) {
             if (scores[i] == scores[max])
                 winners.add(i);
+
         }
+//        if (i>1){
+//            draw = true;
+//        }
     }
 
     private void get_max() {
@@ -82,11 +90,9 @@ public class resultPage extends AppCompatActivity {
         if (winners.size() == 1)
             result.setText(names[winners.get(0)]);
         else {
-            String text = "";
-            for(int i:winners) {
-                text = text + names[i] + "\n";
-            }
-            result.setText(text);
+            result.setText("");
+            W = findViewById(R.id.textView4);
+            W.setText("Draw!");
         }
     }
 
