@@ -7,9 +7,10 @@
     android:layout_height="match_parent"
     android:padding="5dp"
     android:ellipsize="marquee"
-    android:textColor="@android:color/holo_green_light"
+    android:textColor="@color/black"
     android:background="@android:color/white"
     android:textAlignment="center"
+    android:backgroundTint="@color/colorAccent"
     >
 
 </TextView>

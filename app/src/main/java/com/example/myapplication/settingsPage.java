@@ -10,12 +10,14 @@ import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.ToggleButton;
 
-public class settingsPage extends AppCompatActivity {
+public class settingsPage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private boolean nightMode = false;
 
@@ -32,6 +34,16 @@ public class settingsPage extends AppCompatActivity {
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner); // gotta work on spinner settings
 
+
+        Spinner coloredSpinner =  findViewById((R.id.spinner));
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(
+                this,
+                R.array.list,
+                R.layout.custom_spinner
+        );
+        adapter.setDropDownViewResource(R.layout.custom_spinner);
+        coloredSpinner.setAdapter(adapter);
+        coloredSpinner.setOnItemSelectedListener(this);
 
 
         ToggleButton switchTheme = findViewById(R.id.theme);
@@ -121,6 +133,16 @@ public class settingsPage extends AppCompatActivity {
             }
 
         });
+
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
 }

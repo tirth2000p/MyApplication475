@@ -5,11 +5,15 @@
     android:singleLine="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:textColor="#FFC107"
+    android:textColor="@color/colorFont"
     android:padding="5dp"
+    android:textSize="25dp"
     android:ellipsize="marquee"
+    android:textAlignment="center"
+    android:fontFamily="@font/chango"
     android:background="@drawable/abc_spinner_mtrl_am_alpha"
-    android:backgroundTint="@android:color/white"
+    android:backgroundTint="@color/colorFont"
+
 
     >
 

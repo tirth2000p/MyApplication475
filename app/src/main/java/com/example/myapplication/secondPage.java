@@ -6,11 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-public class secondPage extends AppCompatActivity {
+public class secondPage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private String spin;
 
@@ -28,7 +29,18 @@ public class secondPage extends AppCompatActivity {
 
         Button second = findViewById(R.id.button_second);
 
+
         Spinner spinner = (Spinner) findViewById(R.id.spinner2);
+        Spinner coloredSpinner =  findViewById((R.id.spinner2));
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(
+               this,
+               R.array.integer_array_name,
+               R.layout.custom_spinner
+      );
+       adapter.setDropDownViewResource(R.layout.custom_spinner);
+      coloredSpinner.setAdapter(adapter);
+      coloredSpinner.setOnItemSelectedListener(this);
+
 
 //        spinner.setOnItemSelectedListener(this);
 //        CustomAdapter customAdapter=new CustomAdapter(getApplicationContext(),R.);
@@ -79,6 +91,16 @@ public class secondPage extends AppCompatActivity {
 
 
 
+
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
 }

@@ -28,6 +28,8 @@ public class gamePage extends AppCompatActivity {
             names = getIntent().getExtras().getStringArray("names");
         }
         DAB.initN(grid_size, number_of_players, names);
+
+
     }
 
 
