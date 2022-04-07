@@ -14,4 +14,5 @@
     <color name="colorFont">#EDF5E1</color>
     <color name="colorCanvas">#EDF5E1</color>
     <color name="colorDots">#05386B</color>
+    <color name="colorResult">#EDF5E1</color>
 </resources>
