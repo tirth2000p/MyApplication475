@@ -24,6 +24,7 @@ import androidx.annotation.Nullable;
 import com.example.myapplication.R;
 import com.example.myapplication.resultPage;
 
+import java.util.Arrays;
 import java.util.Vector;
 
 public class DABLayout extends View {
@@ -381,12 +382,16 @@ public class DABLayout extends View {
                     square.left = circle_x[j];
                     square.right = circle_x[j+1];
                     canvas.drawRect(square, player_colors[b[i][j]]);
+
                 }
             }
         }
     }
 
+    
+
     private void update_score() {
+
         for (int i = 0; i < n-1; i++) {
             for (int j = 0; j < n-1; j++) {
                 for (int k = 0; k < number_of_players; k++) {
@@ -440,17 +445,19 @@ public class DABLayout extends View {
 
     private void print_winner_checker() {
         System.out.println("WINNER CHECKER");
+
         for(int x: winner_checker) {
             System.out.print(x + " ");
+
         }
-        System.out.println();
+
     }
 
     private void print_player_turn() {
         System.out.println("PLAYER TURN");
         for(int x : turn_keeper)
             System.out.print(x + " ");
-        System.out.println();
+
     }
 
     private void print_names() {

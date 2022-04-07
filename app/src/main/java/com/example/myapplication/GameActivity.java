@@ -11,7 +11,7 @@ public class GameActivity extends AppCompatActivity {
 
 
     int number_of_players =2;
-    String [] names = {"P 1", "P 2"};
+    String [] names = {"Player 1", "Player 2"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
