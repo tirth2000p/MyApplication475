@@ -105,7 +105,7 @@ public class DABLayout extends View {
             player_colors[i].setStrokeWidth(sw);
         }
         circle_color = new Paint(Paint.ANTI_ALIAS_FLAG);
-        circle_color.setColor(Color.parseColor("#05386B"));
+        circle_color.setColor(getResources().getColor(R.color.colorDots));
         scores = new int[number_of_players];
     }
 
@@ -156,7 +156,7 @@ public class DABLayout extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         turnText.setText(names[turn] + "'s turn");
-        canvas.drawColor(Color.parseColor("#EDF5E1")); // Canvas Color
+        canvas.drawColor(getResources().getColor(R.color.colorCanvas)); // Canvas Color
         drawCircles(canvas);
         if (setFinal(fx[c],fy[c])) {
             is_end();
