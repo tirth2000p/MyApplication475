@@ -29,7 +29,6 @@ public class secondPage extends AppCompatActivity implements AdapterView.OnItemS
 
         Button second = findViewById(R.id.button_second);
 
-
         Spinner spinner = (Spinner) findViewById(R.id.spinner2);
         Spinner coloredSpinner =  findViewById((R.id.spinner2));
         ArrayAdapter adapter = ArrayAdapter.createFromResource(
@@ -88,7 +87,6 @@ public class secondPage extends AppCompatActivity implements AdapterView.OnItemS
             }
 
     });
-
 
 
 

@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +32,15 @@ public class gamePage extends AppCompatActivity {
         }
         DAB.initN(grid_size, number_of_players, names);
 
+        Button button3 = findViewById(R.id.GameBack);
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),secondPage.class);
+                startActivity(i);
+            }
+        });
 
     }
 
