@@ -18,7 +18,7 @@
 
     <string name="language_options">Custom Spinner</string>
 
-    <string name="player">p1 vs p2</string>
+    <string name="player">p_1 vs p_2</string>
 
     <string-array name="list">
         <item>English</item>

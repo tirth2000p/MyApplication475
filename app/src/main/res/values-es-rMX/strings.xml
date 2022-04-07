@@ -16,6 +16,6 @@
     <string name="Player2">        Score %d    </string>
 
     <string name="language_options">Custom Spinner</string>
-    <string name="player">P_1 vs P_2</string>
+    <string name="player">P1 vs P2</string>
 
 </resources>
