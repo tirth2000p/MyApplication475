@@ -2,8 +2,10 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupMenu;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +17,7 @@ public class gamePage extends AppCompatActivity {
     private DABLayout DAB;
     private int grid_size, number_of_players;
     private String[] names;
-
+    public Button GameMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,15 +34,47 @@ public class gamePage extends AppCompatActivity {
         }
         DAB.initN(grid_size, number_of_players, names);
 
-        Button button3 = findViewById(R.id.GameBack);
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        GameMenu= findViewById(R.id.GameMenu);
+
+        GameMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),secondPage.class);
-                startActivity(i);
+                PopupMenu popupMenu = new PopupMenu(getApplicationContext(), GameMenu);
+                popupMenu.getMenuInflater().inflate(R.menu.pop_menu, popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId())
+                        {
+                            case R.id.Reset:
+                                System.out.println("reset");
+                                Intent i = new Intent(getApplicationContext(),GameActivity.class);
+                                i.putExtra("var", grid_size);
+                                startActivity(i);
+                                return true;
+                            case R.id.Resize:
+                                System.out.println("resize");
+                                i = new Intent(getApplicationContext(),secondPage.class);
+                                startActivity(i);
+                                return true;
+                            case R.id.Quit:
+                                System.out.println("quit");
+                                i = new Intent(getApplicationContext(),MainActivity.class);
+                                startActivity(i);
+                                return true;
+                            default:
+                                return false;
+                        }
+
+
+                    }
+                });
+                popupMenu.show();
+                //return false;
             }
         });
+
 
     }
 
