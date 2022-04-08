@@ -21,16 +21,15 @@
 
     <Button
         android:id="@+id/multipliers"
-        android:layout_width="296dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="124dp"
+        android:layout_width="292dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="108dp"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="@font/chango"
         android:text="@string/player"
-        android:textSize="34sp"
         android:textColor="@color/colorFont"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 

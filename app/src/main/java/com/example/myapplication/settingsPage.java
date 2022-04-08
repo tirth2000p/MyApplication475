@@ -47,7 +47,7 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
             public void onClick(View v) {
                 lan = spinner.getSelectedItem().toString();
                 //Testing purpose
-                if(lan.equalsIgnoreCase("espanol")){
+                if(lan.equalsIgnoreCase("Español")){
                     setLocale("es");
                 }
                 else{
