@@ -7,8 +7,11 @@ import androidx.appcompat.app.AppCompatDelegate;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -16,6 +19,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.ToggleButton;
+
+import java.util.Locale;
 
 public class settingsPage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -133,7 +138,37 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
             }
 
         });
+        Button buttone = (Button) findViewById(R.id.English);
+        buttone.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                setLocale("en");
+            }
 
+        });
+
+        Button button5 = (Button) findViewById(R.id.Spanish);
+        button5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                setLocale("es");
+            }
+
+        });
+    }
+
+    public void setLocale(String lang) {
+        Locale myLocale = new Locale(lang);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Intent refresh = new Intent(this, settingsPage.class);
+        finish();
+        startActivity(refresh);
     }
 
     @Override

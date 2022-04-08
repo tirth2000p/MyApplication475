@@ -14,6 +14,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Player1">        Score %d    </string>
     <string name="Player2">        Score %d    </string>
+    <string name="player1"> Jugadora 1 </string>
+    <string name="player2"> Jugadora 2 </string>
 
     <string name="language_options">Custom Spinner</string>
     <string name="player">P1 frente a P2</string>
