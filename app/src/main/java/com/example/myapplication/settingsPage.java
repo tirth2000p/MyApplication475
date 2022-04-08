@@ -162,25 +162,7 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
             }
 
         });
-        Button buttone = (Button) findViewById(R.id.English);
-        buttone.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v)
-            {
-                setLocale("en");
-            }
 
-        });
-
-        Button button5 = (Button) findViewById(R.id.Spanish);
-        button5.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v)
-            {
-                setLocale("es");
-            }
-
-        });
     }
 
     public void setLocale(String lang) {
