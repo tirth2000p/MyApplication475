@@ -36,7 +36,10 @@
     <string name="Sound_Off">Sonido apagado</string>
     <string name="Back">Atrás</string>
 
-
+    <string-array name="list">
+        <item>Espanol</item>
+        <item>English</item>
+    </string-array>
 
 
 
