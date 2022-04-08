@@ -10,13 +10,16 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="63dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="300dp"
+            android:layout_width="59dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="264dp"
             android:backgroundTint="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
             app:layout_constraintStart_toEndOf="@+id/spinner"
+            app:layout_constraintTop_toBottomOf="@+id/theme"
+            app:layout_constraintVertical_bias="0.761"
             app:srcCompat="@drawable/arrow" />
 
         <TextView
@@ -33,47 +36,47 @@
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.152" />
-
+            app:layout_constraintVertical_bias="0.1" />
 
         <ToggleButton
             android:id="@+id/theme"
-            android:layout_width="276dp"
-            android:layout_height="91dp"
+            android:layout_width="355dp"
+            android:layout_height="96dp"
             android:layout_marginTop="52dp"
             android:background="@color/colorAccent"
             android:backgroundTint="@color/colorAccent"
             android:fontFamily="@font/chango"
             android:textAlignment="center"
+            android:textColor="@color/colorFont"
             android:textOff="@string/Dark_Off"
             android:textOn="@string/Dark_On"
             android:textSize="30sp"
-            android:textColor="@color/colorFont"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="276dp"
-            android:layout_height="91dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="267dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="52dp"
             android:background="@color/colorAccent"
             android:entries="@array/list"
-            android:textAlignment="center"
             android:popupBackground="@color/colorAccent"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/theme" />
-
+            app:layout_constraintTop_toBottomOf="@+id/theme"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ToggleButton
             android:id="@+id/button3"
-            android:layout_width="276dp"
-            android:layout_height="91dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="355dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="52dp"
             android:backgroundTint="@color/colorAccent"
             android:fontFamily="@font/chango"
             android:textOff="@string/Sound_On"
@@ -87,19 +90,19 @@
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="163dp"
-            android:layout_height="75dp"
+            android:layout_width="191dp"
+            android:layout_height="62dp"
             android:backgroundTint="@color/colorAccent"
             android:fontFamily="@font/chango"
             android:text="@string/Back"
-            android:textSize="28sp"
             android:textColor="@color/colorFont"
+            android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.022"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button3"
-            app:layout_constraintVertical_bias="0.826" />
+            app:layout_constraintVertical_bias="0.828" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
