@@ -23,8 +23,8 @@
     <string name="Move">Number Of Moves</string>
     <string name="Turn">X Turn</string>
     <string name="Menu">Menu</string>
-    <string name="Score1">Player1</string>
-    <string name="Score2">Player2</string>
+    <string name="Score1">Player 1</string>
+    <string name="Score2">Player 2</string>
     <string name="Winner">And the winner is:</string>
     <string name="Winner_Name">Winner</string>
     <string name="Restart">Restart</string>
@@ -34,7 +34,7 @@
     <string name="Sound_On">Sound: On</string>
     <string name="Sound_Off">Sound: Off</string>
     <string name="Back">Back</string>
-
+    <string name="Draw">Draw!</string>
 
     <string-array name="list">
         <item>Français</item>

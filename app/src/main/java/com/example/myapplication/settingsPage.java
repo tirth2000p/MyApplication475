@@ -50,6 +50,9 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
                 if(lan.equalsIgnoreCase("Español")){
                     setLocale("es");
                 }
+                else if(lan.equalsIgnoreCase("Français")){
+                    setLocale("fr");
+                }
                 else{
                     setLocale("en");
                 }

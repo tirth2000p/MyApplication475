@@ -22,8 +22,8 @@
     <string name="Move">Número de movimientos</string>
     <string name="Turn">giro x</string>
     <string name="Menu">Menú</string>
-    <string name="Score1">Jugador 1:</string>
-    <string name="Score2">jugador2:</string>
+    <string name="Score1">Jugador 1</string>
+    <string name="Score2">jugador 2</string>
     <string name="Winner">Y el ganador es:</string>
     <string name="Winner_Name">Ganador</string>
     <string name="Restart">Reiniciar</string>
@@ -33,6 +33,7 @@
     <string name="Sound_On">Sonido encendido</string>
     <string name="Sound_Off">Sonido apagado</string>
     <string name="Back">Atrás</string>
+    <string name="Draw">Empate!</string>
 
     <string-array name="list">
         <item>Español</item>
