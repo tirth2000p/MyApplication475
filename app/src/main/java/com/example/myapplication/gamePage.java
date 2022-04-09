@@ -27,6 +27,9 @@ public class gamePage extends AppCompatActivity {
         DAB = findViewById(R.id.dab);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
+
+
         if (getIntent().getExtras() != null) {
             grid_size = getIntent().getExtras().getInt("grid");
             number_of_players = getIntent().getExtras().getInt("players");

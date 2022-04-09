@@ -46,9 +46,12 @@ public class DABLayout extends View {
     private int[] si, sj , fi , fj , winner_si, winner_sj, winner_fi, winner_fj;
     private int[][] a ,b;
     private int turn = 0;
-    private TextView count;
+    private TextView count,p1count,p2count;
     private Animation count_animation, turn_animation;
     private TextView turnText;
+    private int total =0;
+    private int p1Total =0;
+    private int p2Total =0;
 
     Vector<Integer> winner_checker;
     Vector<Integer> turn_keeper;
@@ -93,6 +96,8 @@ public class DABLayout extends View {
         turn_animation = AnimationUtils.loadAnimation(getContext(), R.anim.bounce);
         count_animation = AnimationUtils.loadAnimation(getContext(), R.anim.blink_anim);
         count = ((Activity)getContext()).findViewById(R.id.counter);
+        p1count= ((Activity)getContext()).findViewById(R.id.p1counter);
+        p2count= ((Activity)getContext()).findViewById(R.id.p2counter);
         turnText = ((Activity)getContext()).findViewById(R.id.turn_text);
         n = grid_size;
         number_of_players = players;
@@ -114,6 +119,8 @@ public class DABLayout extends View {
         turn_animation = AnimationUtils.loadAnimation(getContext(), R.anim.bounce);
         count_animation = AnimationUtils.loadAnimation(getContext(), R.anim.blink_anim);
         count = ((Activity)getContext()).findViewById(R.id.counter);
+        p1count= ((Activity)getContext()).findViewById(R.id.p1counter);
+        p2count= ((Activity)getContext()).findViewById(R.id.p2counter);
         turnText = ((Activity)getContext()).findViewById(R.id.turn_text);
         n = grid_size;
         names = player_names;
@@ -303,6 +310,25 @@ public class DABLayout extends View {
                     repeat++;
                     System.out.println("REPEAT IS " + repeat);
                     k++;
+
+                    // score cheaker
+
+                    System.out.println("player"+names[turn]);
+
+                    if(names[turn].equalsIgnoreCase("Player 2")){
+                        p2Total++;
+
+                    }
+                    else{
+                        p1Total++;
+
+                    }
+
+                    total++;
+                    System.out.println("total "+total);
+
+
+
                     print_winner_checker();
                     sound_effects.play(box_sound_int, 1, 1, 0, 0, 1);
                     flag = true;
@@ -469,10 +495,15 @@ public class DABLayout extends View {
     }
 
     private void update_text() {
-        count.startAnimation(count_animation);
+        //count.startAnimation(count_animation);
         count.setText(String.valueOf(c));
+        p1count.setText(String.valueOf(p1Total));
+        p2count.setText(String.valueOf(p2Total));
+
         turnText.startAnimation(turn_animation);
         turnText.setText(names[turn] + "'s turn");
+
+
     }
 
     private void init_sounds() {
