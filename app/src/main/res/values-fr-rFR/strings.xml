@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Application</string>
     <string name="action_settings">Settings</string>
@@ -16,15 +17,9 @@
 
     <string name="language_options">Custom Spinner</string>
 
-<<<<<<< Updated upstream
-    <string-array name="list">
-        <item>English</item>
-        <item>Espanol</item>
-    </string-array>
-=======
     <string name="player">P1 vs P2</string>
     <string name="Setting">Setting</string>
-    <string name="Version">Version 1.0</string>
+    <string name="Version">Version 0.1</string>
     <string name="Move">Number Of Moves</string>
     <string name="Turn">X Turn</string>
     <string name="Menu">Menu</string>
@@ -47,6 +42,8 @@
 <!--        <item>Español</item>-->
 <!--        <item>Français</item>-->
 <!--    </string-array>-->
->>>>>>> Stashed changes
+
+
+
 
 </resources>

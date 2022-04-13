@@ -6,4 +6,12 @@
         <item>5 X 4</item>
         <item>7 X 9</item>
     </array>
+
+    <array name="list">
+        <item>Select Language</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+    </array>
+
 </resources>
