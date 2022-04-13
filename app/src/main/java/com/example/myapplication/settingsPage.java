@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.ToggleButton;
@@ -25,7 +26,7 @@ import java.util.Locale;
 public class settingsPage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private boolean nightMode = false;
-
+    private String lan;
     private boolean Sound = true;
     String SoundVal = "Sound: On";
     @Override
@@ -38,6 +39,32 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
         System.out.println("NewSettings");
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner); // gotta work on spinner settings
+
+        ImageButton button = (ImageButton) findViewById(R.id.imageButton);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lan = spinner.getSelectedItem().toString();
+                //Testing purpose
+                if(lan.equalsIgnoreCase("Español")){
+                    setLocale("es");
+                }
+                else if(lan.equalsIgnoreCase("Français")){
+                    setLocale("fr");
+                }
+                else{
+                    setLocale("en");
+                }
+
+            }
+        });
+
+
+
+
+
+
 
 
         Spinner coloredSpinner =  findViewById((R.id.spinner));
@@ -138,25 +165,7 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
             }
 
         });
-        Button buttone = (Button) findViewById(R.id.English);
-        buttone.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v)
-            {
-                setLocale("en");
-            }
 
-        });
-
-        Button button5 = (Button) findViewById(R.id.Spanish);
-        button5.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v)
-            {
-                setLocale("es");
-            }
-
-        });
     }
 
     public void setLocale(String lang) {

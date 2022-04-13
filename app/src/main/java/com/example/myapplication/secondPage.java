@@ -46,12 +46,11 @@ public class secondPage extends AppCompatActivity implements AdapterView.OnItemS
 
 
 //        ArrayAdapter adapter = new ArrayAdapter(getApplicationContext(),R.layout.custom_spinner_dropdown,
-//                R.id.spinner2);
+//        R.id.spinner2);
 //        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 //        spinner.setAdapter(adapter);
 //
-
-        // directs to gameactivity (blank fragsment is empty
+// directs to gameactivity (blank fragsment is empty
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

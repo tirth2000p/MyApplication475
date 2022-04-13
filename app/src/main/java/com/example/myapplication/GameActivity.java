@@ -20,6 +20,8 @@ public class GameActivity extends AppCompatActivity {
 
         int grid_size = getIntent().getExtras().getInt("var");
 
+        names[0] = getResources().getString(R.string.Score1);
+        names[1] = getResources().getString(R.string.Score2);
 
 
         /*  Game start code */

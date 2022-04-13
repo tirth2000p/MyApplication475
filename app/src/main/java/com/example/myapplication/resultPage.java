@@ -11,7 +11,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -92,7 +91,7 @@ public class resultPage extends AppCompatActivity {
         else {
             result.setText("");
             W = findViewById(R.id.textView4);
-            W.setText("Draw!");
+            W.setText(R.string.Draw);
         }
     }
 
