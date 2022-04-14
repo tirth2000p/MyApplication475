@@ -1,0 +1,51 @@
+
+
+<resources>
+    <string name="app_name">应用程序</string>
+    <string name="action_settings">设置</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">第一个片段</string>
+    <string name="second_fragment_label">第二个片段</string>
+    <string name="next">下一个</string>
+    <string name="previous">上一个</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="Player1">        分数 %d    </string>
+    <string name="Player2">        分数 %d    </string>
+
+    <string name="language_options">Custom Spinner</string>
+
+    <string name="player">P1 vs P2</string>
+    <string name="Setting">设置</string>
+    <string name="Version">版本 1.0</string>
+    <string name="Move">移动次数</string>
+    <string name="Turn"></string>
+    <string name="Menu">菜单</string>
+    <string name="Score1">玩家 1</string>
+    <string name="Score2">玩家 2</string>
+    <string name="Winner">胜利者是:</string>
+    <string name="Winner_Name">胜利者</string>
+    <string name="Restart">重新开始</string>
+    <string name="Start">开始</string>
+    <string name="Dark_Off">夜间模式: 关</string>
+    <string name="Dark_On">夜间模式: 开</string>
+    <string name="Sound_On">声音: 开</string>
+    <string name="Sound_Off">声音: 关</string>
+    <string name="Back">后退</string>
+    <string name="Draw">平局!</string>
+
+    <string-array name="list">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+
+    </string-array>
+
+
+
+
+
+</resources>
