@@ -163,7 +163,7 @@ public class DABLayout extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        turnText.setText(names[turn] + "'s turn");
+        turnText.setText(names[turn] + this.getResources().getString(R.string.Turn));
         canvas.drawColor(getResources().getColor(R.color.colorCanvas)); // Canvas Color
         drawCircles(canvas);
         if (setFinal(fx[c],fy[c])) {
@@ -501,7 +501,7 @@ public class DABLayout extends View {
         p2count.setText(String.valueOf(p2Total));
 
         turnText.startAnimation(turn_animation);
-        turnText.setText(names[turn] + "'s turn");
+        turnText.setText(names[turn] + R.string.Turn);
 
 
     }
