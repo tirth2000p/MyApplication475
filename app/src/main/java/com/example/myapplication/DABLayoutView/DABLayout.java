@@ -501,7 +501,9 @@ public class DABLayout extends View {
         p2count.setText(String.valueOf(p2Total));
 
         turnText.startAnimation(turn_animation);
-        turnText.setText(names[turn] + R.string.Turn);
+        turnText.setText(names[turn] + this.getResources().getString(R.string.Turn));
+
+
 
 
     }

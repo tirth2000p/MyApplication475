@@ -57,9 +57,13 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
                     setLocale("zh");
                 }
 
-                else{
+                else if (lan.equalsIgnoreCase("English")){
                     setLocale("en");
                 }
+                else if(lan.equalsIgnoreCase("বাংলা")){
+                    setLocale("bn");
+                }
+
 
             }
         });

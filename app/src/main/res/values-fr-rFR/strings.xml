@@ -1,0 +1,50 @@
+
+
+<resources>
+    <string name="app_name">Mon application</string>
+    <string name="action_settings">Réglages</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Premier fragment</string>
+    <string name="second_fragment_label">Deuxième fragment</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précédent</string>
+
+
+    <string name="Player1">        Score %d    </string>
+    <string name="Player2">        Score %d    </string>
+
+    <string name="language_options">Tourneur personnalisé</string>
+
+    <string name="player">P1 vs P2</string>
+    <string name="Setting">Paramètre</string>
+    <string name="Version">Version 1.0</string>
+    <string name="Move">Nombre de coups</string>
+    <string name="Turn"> Le tour</string>
+    <string name="Menu">Menu</string>
+    <string name="Score1">Joueur 1</string>
+    <string name="Score2">Joueur 2</string>
+    <string name="Winner">Et le gagnant est:</string>
+    <string name="Winner_Name">Gagnant</string>
+    <string name="Restart">Redémarrer</string>
+    <string name="Start">Démarrer</string>
+    <string name="Dark_Off">Mode sombre : désactivé</string>
+    <string name="Dark_On">Mode sombre : activé</string>
+    <string name="Sound_On">Son : Activé</string>
+    <string name="Sound_Off">Son : Désactivé</string>
+    <string name="Back">Arrière</string>
+    <string name="Draw">Dessiner!</string>
+
+
+    <string-array name="list">
+        <item>Français</item>
+        <item>English</item>
+        <item>বাংলা</item>
+        <item>Español</item>
+        <item>中文</item>
+    </string-array>
+
+
+
+
+
+</resources>
