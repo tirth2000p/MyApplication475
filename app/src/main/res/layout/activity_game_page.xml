@@ -22,18 +22,19 @@
 
     <TextView
         android:id="@+id/counter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
         android:fontFamily="@font/chango"
         android:text="0"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintHorizontal_bias="0.866"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <TextView
         android:id="@+id/p1counter"
@@ -41,14 +42,15 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/chango"
         android:text="0"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
         android:id="@+id/p2counter"
@@ -56,6 +58,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/chango"
         android:text="0"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,6 +74,7 @@
         android:layout_height="29dp"
         android:fontFamily="@font/chango"
         android:text="@string/Move"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,19 +90,22 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/chango"
         android:text="@string/Turn"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932" />
+        app:layout_constraintVertical_bias="0.93" />
 
     <Button
         android:id="@+id/GameMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Menu"
+        android:backgroundTint="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
@@ -108,10 +115,11 @@
 
     <TextView
         android:id="@+id/textP1"
-        android:layout_width="151dp"
-        android:layout_height="31dp"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
         android:fontFamily="@font/chango"
         android:text="@string/Score1"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -119,14 +127,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.106" />
 
     <TextView
         android:id="@+id/textP2"
-        android:layout_width="144dp"
-        android:layout_height="34dp"
+        android:layout_width="164dp"
+        android:layout_height="32dp"
         android:fontFamily="@font/chango"
         android:text="@string/Score2"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

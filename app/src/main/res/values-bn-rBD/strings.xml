@@ -1,0 +1,52 @@
+
+
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">সেটিংস</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">প্রথম খণ্ড</string>
+    <string name="second_fragment_label">দ্বিতীয় খণ্ড</string>
+    <string name="next">পরবর্তী</string>
+    <string name="previous">পূর্ববর্তী</string>
+
+
+
+    <string name="Player1">     ফলাফল    %d    </string>
+    <string name="Player2">     ফলাফল %d    </string>
+
+    <string name="language_options">Custom Spinner</string>
+
+    <string name="player">খেলুন</string>
+    <string name="Setting">সেটিংস</string>
+    <string name="Version">ভারসন ১.০</string>
+    <string name="Move">চাল সংখ্যা</string>
+    <string name="Turn">  এর চাল</string>
+    <string name="Menu">তালিকা</string>
+    <string name="Score1">প্রথম খেলোয়াড়</string>
+    <string name="Score2">দ্বিতীয় খেলোয়াড়</string>
+    <string name="Winner">এবং বিজয়ীর নাম হচ্ছে :</string>
+    <string name="Winner_Name">বিজয়ী</string>
+    <string name="Restart">আবার শুরু</string>
+    <string name="Start">শুরু</string>
+    <string name="Dark_Off">ডার্ক মুড: বন্ধ</string>
+    <string name="Dark_On">ডার্ক মুড: খোলা</string>
+    <string name="Sound_On">শব্দ: বন্ধ</string>
+    <string name="Sound_Off">শব্দ: খোলা</string>
+    <string name="Back">পূর্ববর্তী</string>
+    <string name="Draw">ড্র !</string>
+
+
+    <string-array name="list">
+        <item>বাংলা</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>中文</item>
+
+    </string-array>
+
+
+
+
+
+</resources>

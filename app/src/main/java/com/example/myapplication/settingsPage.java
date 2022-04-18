@@ -56,21 +56,28 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
                 lan = spinner.getSelectedItem().toString();
                 //Testing purpose
                 if(lan.equalsIgnoreCase("Español")){
-                    setLanguage(settingsPage.this,"es");
+                    setLocale("es");
                 }
                 else if(lan.equalsIgnoreCase("Français")){
-                    setLanguage(settingsPage.this,"fr");
+                    setLocale("fr");
                 }
                 else if (lan.equalsIgnoreCase("中文")){
                     setLocale("zh");
                 }
 
                 else{
-                    setLanguage(settingsPage.this,"en");
+                    setLocale("en");
                 }
 
             }
         });
+
+
+
+
+
+
+
 
         Spinner coloredSpinner =  findViewById((R.id.spinner));
         ArrayAdapter adapter = ArrayAdapter.createFromResource(
@@ -180,44 +187,6 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
         Configuration conf = res.getConfiguration();
         conf.locale = myLocale;
         res.updateConfiguration(conf, dm);
-        Intent refresh = new Intent(this, settingsPage.class);
-        finish();
-        startActivity(refresh);
-    }
-
-    @SuppressWarnings("deprecation")
-    public Locale getSystemLocaleLegacy(Configuration config){
-        return config.locale;
-    }
-
-    @TargetApi(Build.VERSION_CODES.N)
-    public Locale getSystemLocale(Configuration config){
-        return config.getLocales().get(0);
-    }
-
-    @SuppressWarnings("deprecation")
-    public void setSystemLocaleLegacy(Configuration config, Locale locale){
-        config.locale = locale;
-    }
-
-    @TargetApi(Build.VERSION_CODES.N)
-    public void setSystemLocale(Configuration config, Locale locale){
-        config.setLocale(locale);
-    }
-
-    public void setLanguage(Context context, String languageCode){
-        Locale locale = new Locale(languageCode);
-        Locale.setDefault(locale);
-        Configuration config = new Configuration();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            setSystemLocale(config, locale);
-        }else{
-            setSystemLocaleLegacy(config, locale);
-        }
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1)
-            context.getApplicationContext().getResources().updateConfiguration(config,
-                    context.getResources().getDisplayMetrics());
-
         Intent refresh = new Intent(this, settingsPage.class);
         finish();
         startActivity(refresh);
