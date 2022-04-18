@@ -4,12 +4,14 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.media.AudioManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -29,11 +31,17 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
     private String lan;
     private boolean Sound = true;
     String SoundVal = "Sound: On";
+    boolean hide;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActionBar ACTIONbAR =   getSupportActionBar();
-        ACTIONbAR.hide();
+        try {
+            ACTIONbAR.hide();
+        }
+        catch (NullPointerException e){
+            hide = false;
+        }
         setContentView(R.layout.activity_settings_page);
 
         System.out.println("NewSettings");
@@ -48,24 +56,17 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
                 lan = spinner.getSelectedItem().toString();
                 //Testing purpose
                 if(lan.equalsIgnoreCase("Español")){
-                    setLocale("es");
+                    setLanguage(settingsPage.this,"es");
                 }
                 else if(lan.equalsIgnoreCase("Français")){
-                    setLocale("fr");
+                    setLanguage(settingsPage.this,"fr");
                 }
                 else{
-                    setLocale("en");
+                    setLanguage(settingsPage.this,"en");
                 }
 
             }
         });
-
-
-
-
-
-
-
 
         Spinner coloredSpinner =  findViewById((R.id.spinner));
         ArrayAdapter adapter = ArrayAdapter.createFromResource(
@@ -175,6 +176,44 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
         Configuration conf = res.getConfiguration();
         conf.locale = myLocale;
         res.updateConfiguration(conf, dm);
+        Intent refresh = new Intent(this, settingsPage.class);
+        finish();
+        startActivity(refresh);
+    }
+
+    @SuppressWarnings("deprecation")
+    public Locale getSystemLocaleLegacy(Configuration config){
+        return config.locale;
+    }
+
+    @TargetApi(Build.VERSION_CODES.N)
+    public Locale getSystemLocale(Configuration config){
+        return config.getLocales().get(0);
+    }
+
+    @SuppressWarnings("deprecation")
+    public void setSystemLocaleLegacy(Configuration config, Locale locale){
+        config.locale = locale;
+    }
+
+    @TargetApi(Build.VERSION_CODES.N)
+    public void setSystemLocale(Configuration config, Locale locale){
+        config.setLocale(locale);
+    }
+
+    public void setLanguage(Context context, String languageCode){
+        Locale locale = new Locale(languageCode);
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            setSystemLocale(config, locale);
+        }else{
+            setSystemLocaleLegacy(config, locale);
+        }
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1)
+            context.getApplicationContext().getResources().updateConfiguration(config,
+                    context.getResources().getDisplayMetrics());
+
         Intent refresh = new Intent(this, settingsPage.class);
         finish();
         startActivity(refresh);
