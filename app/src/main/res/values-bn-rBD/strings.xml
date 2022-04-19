@@ -34,6 +34,7 @@
     <string name="Sound_Off">শব্দ: খোলা</string>
     <string name="Back">পূর্ববর্তী</string>
     <string name="Draw">ড্র !</string>
+    <string name="note">(ভাষা ফিরিয়ে দেয়)</string>
 
 
     <string-array name="list">

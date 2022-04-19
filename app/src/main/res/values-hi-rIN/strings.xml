@@ -33,6 +33,8 @@
     <string name="Sound_Off">आवाज़: बंद</string>
     <string name="Back">पीछे</string>
     <string name="Draw">बराबरी!</string>
+    <string name="note">(भाषा वापस बदलता है)</string>
+
 
 
     <string-array name="list">

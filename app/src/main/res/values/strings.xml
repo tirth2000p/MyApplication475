@@ -33,6 +33,7 @@
     <string name="Sound_Off">Sound: Off</string>
     <string name="Back">Back</string>
     <string name="Draw">Draw!</string>
+    <string name="note">(Reverts Language)</string>
 
 
     <string-array name="list">

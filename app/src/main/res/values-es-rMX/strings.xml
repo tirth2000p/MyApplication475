@@ -31,6 +31,7 @@
     <string name="Sound_Off">Sonido apagado</string>
     <string name="Back">Atrás</string>
     <string name="Draw">Empate!</string>
+    <string name="note">(Revierte el idioma)</string>
 
     <string-array name="list">
         <item>Español</item>

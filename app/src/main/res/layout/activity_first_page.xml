@@ -10,8 +10,9 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="411dp"
-        android:layout_height="202dp"
+        android:layout_width="410dp"
+        android:layout_height="169dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +22,9 @@
 
     <Button
         android:id="@+id/multipliers"
-        android:layout_width="292dp"
-        android:layout_height="157dp"
-        android:layout_marginTop="108dp"
+        android:layout_width="295dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="136dp"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="@font/chango"
         android:text="@string/player"

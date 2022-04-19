@@ -35,6 +35,8 @@
     <string name="Sound_Off">声音: 关</string>
     <string name="Back">后退</string>
     <string name="Draw">平局!</string>
+    <string name="note">(重置语言)</string>
+
 
     <string-array name="list">
         <item>中文</item>

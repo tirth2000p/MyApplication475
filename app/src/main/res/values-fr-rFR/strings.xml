@@ -33,7 +33,7 @@
     <string name="Sound_Off">Son : Désactivé</string>
     <string name="Back">Arrière</string>
     <string name="Draw">Dessiner!</string>
-
+    <string name="note">(Rétablit la langue)</string>
 
     <string-array name="list">
         <item>Français</item>

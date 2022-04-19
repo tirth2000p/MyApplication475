@@ -27,9 +27,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="411dp"
-        android:layout_height="268dp"
-        android:src="@drawable/icon_2"
+        android:layout_width="410dp"
+        android:layout_height="169dp"
+        android:src="@drawable/screen_shot_2022_02_25_at_9_55_38_pm"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
