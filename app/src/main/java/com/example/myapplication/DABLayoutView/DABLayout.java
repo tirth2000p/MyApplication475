@@ -318,16 +318,12 @@ public class DABLayout extends View {
                     }
 
                     total++;
-                    System.out.println("total "+total);
-
-
 
                     print_winner_checker();
                     sound_effects.play(box_sound_int, 1, 1, 0, 0, 1);
                     flag = true;
                 }
             }
-            System.out.println("REPEAT IS " + repeat);
         }
         return flag;
     }
