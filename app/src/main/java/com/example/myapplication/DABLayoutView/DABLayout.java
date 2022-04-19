@@ -447,12 +447,10 @@ public class DABLayout extends View {
     }
 
     private void print_b() {
-        System.out.println("b");
         for (int i = 0; i < n-1; i++) {
             for (int j = 0; j < n-1; j++) {
-                System.out.print(b[i][j] + " ");
+
             }
-            System.out.println();
         }
     }
 
