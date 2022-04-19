@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/Reset"
-        android:title="Reset"/>
+        android:title="@string/Reset"/>
         <item android:id="@+id/Resize"
-            android:title="Resize"/>
+            android:title="@string/Resize"/>
     <item android:id="@+id/Quit"
-        android:title="Quit"/>
+        android:title="@string/Quit"/>
 
 
 </menu>

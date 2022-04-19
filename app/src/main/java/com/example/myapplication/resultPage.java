@@ -40,7 +40,7 @@ public class resultPage extends AppCompatActivity {
         winners = new Vector<>();
         my_image = findViewById(R.id.myImage);
         if (getIntent().getExtras()!= null) {
-            System.out.println("ENTERED");
+
             scores = getIntent().getExtras().getIntArray("scores");
             names = getIntent().getExtras().getStringArray("names");
             player_no = getIntent().getExtras().getInt("players");
@@ -72,9 +72,7 @@ public class resultPage extends AppCompatActivity {
                 winners.add(i);
 
         }
-//        if (i>1){
-//            draw = true;
-//        }
+
     }
 
     private void get_max() {

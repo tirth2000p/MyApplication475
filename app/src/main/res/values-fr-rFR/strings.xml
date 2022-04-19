@@ -34,6 +34,9 @@
     <string name="Back">Arrière</string>
     <string name="Draw">Dessiner!</string>
     <string name="note">(Rétablit la langue)</string>
+    <string name="Reset">Réinitialiser</string>
+    <string name="Resize">Redimensionner</string>
+    <string name="Quit">Arrêter</string>
 
 
     <string-array name="list">
