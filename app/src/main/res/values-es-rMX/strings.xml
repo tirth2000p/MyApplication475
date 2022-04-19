@@ -32,6 +32,9 @@
     <string name="Back">Atrás</string>
     <string name="Draw">Empate!</string>
     <string name="note">(Revierte el idioma)</string>
+    <string name="Reset">Reiniciar</string>
+    <string name="Resize">Redimensionar</string>
+    <string name="Quit">Dejar</string>
 
 
     <string-array name="list">
