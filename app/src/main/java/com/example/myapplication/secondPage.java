@@ -22,7 +22,7 @@ public class secondPage extends AppCompatActivity implements AdapterView.OnItemS
         ACTIONbAR.hide();
         setContentView(R.layout.activity_second_page);
 
-        System.out.println("New Second");
+        
 
 
         Button button = findViewById(R.id.button);

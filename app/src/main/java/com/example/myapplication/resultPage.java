@@ -40,7 +40,7 @@ public class resultPage extends AppCompatActivity {
         winners = new Vector<>();
         my_image = findViewById(R.id.myImage);
         if (getIntent().getExtras()!= null) {
-            
+
             scores = getIntent().getExtras().getIntArray("scores");
             names = getIntent().getExtras().getStringArray("names");
             player_no = getIntent().getExtras().getInt("players");
