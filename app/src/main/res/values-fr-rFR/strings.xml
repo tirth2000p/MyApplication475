@@ -35,6 +35,7 @@
     <string name="Draw">Dessiner!</string>
     <string name="note">(Rétablit la langue)</string>
 
+
     <string-array name="list">
         <item>Français</item>
         <item>English</item>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Reset"
+        android:title="重载"/>
+        <item android:id="@+id/Resize"
+            android:title="重置"/>
+    <item android:id="@+id/Quit"
+        android:title="退出"/>
+
+
+</menu>

@@ -33,6 +33,7 @@
     <string name="Draw">Empate!</string>
     <string name="note">(Revierte el idioma)</string>
 
+
     <string-array name="list">
         <item>Español</item>
         <item>Français</item>
