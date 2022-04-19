@@ -255,7 +255,6 @@ public class DABLayout extends View {
                     if (turn == number_of_players)
                         turn = 0;
                     c++;
-                    print_player_turn();
                     update_text();
                     vibrator.vibrate(20);
                     return true;
@@ -428,13 +427,6 @@ public class DABLayout extends View {
             getContext().startActivity(i);
             ((Activity)getContext()).finish();
         }
-    }
-
-    private void print_player_turn() {
-        System.out.println("PLAYER TURN");
-        for(int x : turn_keeper)
-            System.out.print(x + " ");
-
     }
 
     private void print_names() {
