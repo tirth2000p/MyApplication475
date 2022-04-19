@@ -17,7 +17,7 @@
 
     <string name="language_options">Custom Spinner</string>
 
-    <string name="player">P1 vs P2</string>
+    <string name="player">开始</string>
     <string name="Setting">设置</string>
     <string name="Version">版本 1.0</string>
     <string name="Move">移动次数</string>
@@ -35,12 +35,16 @@
     <string name="Sound_Off">声音: 关</string>
     <string name="Back">后退</string>
     <string name="Draw">平局!</string>
+    <string name="note">(重置语言)</string>
+
+
 
     <string-array name="list">
         <item>中文</item>
         <item>English</item>
         <item>Español</item>
         <item>বাংলা</item>
+        <item>हिन्दी</item>
         <item>Français</item>
 
 

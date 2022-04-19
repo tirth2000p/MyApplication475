@@ -315,7 +315,7 @@ public class DABLayout extends View {
 
                     System.out.println("player"+names[turn]);
 
-                    if(names[turn].equalsIgnoreCase("Player 2")){
+                    if(names[turn].equalsIgnoreCase(this.getResources().getString(R.string.Score2))){
                         p2Total++;
 
                     }

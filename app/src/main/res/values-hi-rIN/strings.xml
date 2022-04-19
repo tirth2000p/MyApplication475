@@ -10,32 +10,36 @@
     <string name="previous">पिछला</string>
 
 
-    <string name="Player1">        Score %d    </string>
-    <string name="Player2">        Score %d    </string>
+    <string name="Player1">        अंक %d    </string>
+    <string name="Player2">        अंक %d    </string>
 
     <string name="language_options">Custom Spinner</string>
 
-    <string name="player">P1 vs P2</string>
-    <string name="Setting">Setting</string>
-    <string name="Version">Version 1.0</string>
-    <string name="Move">Number Of Moves</string>
-    <string name="Turn">\'s Turn</string>
-    <string name="Menu">Menu</string>
-    <string name="Score1">Player 1</string>
-    <string name="Score2">Player 2</string>
-    <string name="Winner">And the winner is:</string>
-    <string name="Winner_Name">Winner</string>
-    <string name="Restart">Restart</string>
-    <string name="Start">Start</string>
-    <string name="Dark_Off">DarkMode: Off</string>
-    <string name="Dark_On">DarkMode: On</string>
-    <string name="Sound_On">Sound: On</string>
-    <string name="Sound_Off">Sound: Off</string>
-    <string name="Back">Back</string>
-    <string name="Draw">Draw!</string>
+    <string name="player">खेल शुरू</string>
+    <string name="Setting">सेटिंग</string>
+    <string name="Version">संस्करण १.0</string>
+    <string name="Move">चालों की संख्या</string>
+    <string name="Turn"> कि बारी</string>
+    <string name="Menu">मेनू</string>
+    <string name="Score1">खिलाड़ी १</string>
+    <string name="Score2">खिलाड़ी २</string>
+    <string name="Winner">और विजेता है:</string>
+    <string name="Winner_Name">विजेता</string>
+    <string name="Restart">पुनर्प्रारंभ</string>
+    <string name="Start">शुरू</string>
+    <string name="Dark_Off">डार्क मोड: बंद</string>
+    <string name="Dark_On">डार्क मोड: चालू</string>
+    <string name="Sound_On">आवाज़: चालू</string>
+    <string name="Sound_Off">आवाज़: बंद</string>
+    <string name="Back">पीछे</string>
+    <string name="Draw">बराबरी!</string>
+    <string name="note">(भाषा वापस बदलता है)</string>
+
+
 
 
     <string-array name="list">
+        <item>हिन्दी</item>
         <item>English</item>
         <item>Español</item>
         <item>Français</item>

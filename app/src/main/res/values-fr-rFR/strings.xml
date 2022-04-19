@@ -15,7 +15,7 @@
 
     <string name="language_options">Tourneur personnalisé</string>
 
-    <string name="player">P1 vs P2</string>
+    <string name="player">Joue</string>
     <string name="Setting">Paramètre</string>
     <string name="Version">Version 1.0</string>
     <string name="Move">Nombre de coups</string>
@@ -33,12 +33,14 @@
     <string name="Sound_Off">Son : Désactivé</string>
     <string name="Back">Arrière</string>
     <string name="Draw">Dessiner!</string>
+    <string name="note">(Rétablit la langue)</string>
 
 
     <string-array name="list">
         <item>Français</item>
         <item>English</item>
         <item>বাংলা</item>
+        <item>हिन्दी</item>
         <item>Español</item>
         <item>中文</item>
     </string-array>

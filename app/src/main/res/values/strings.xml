@@ -15,7 +15,7 @@
 
     <string name="language_options">Custom Spinner</string>
 
-    <string name="player">P1 vs P2</string>
+    <string name="player">Play</string>
     <string name="Setting">Setting</string>
     <string name="Version">Version 1.0</string>
     <string name="Move">Number Of Moves</string>
@@ -33,12 +33,14 @@
     <string name="Sound_Off">Sound: Off</string>
     <string name="Back">Back</string>
     <string name="Draw">Draw!</string>
+    <string name="note">(Reverts Language)</string>
 
 
     <string-array name="list">
         <item>English</item>
         <item>Español</item>
         <item>Français</item>
+        <item>हिन्दी</item>
         <item>বাংলা</item>
         <item>中文</item>
     </string-array>

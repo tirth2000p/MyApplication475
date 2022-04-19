@@ -13,7 +13,7 @@
     <string name="Player2">        Score %d    </string>
 
     <string name="language_options">Custom Spinner</string>
-    <string name="player">J1 frente a J2</string>
+    <string name="player">Jugar</string>
     <string name="Setting">Ajuste</string>
     <string name="Version">Versión 1.0</string>
     <string name="Move">Número de movimientos</string>
@@ -31,11 +31,14 @@
     <string name="Sound_Off">Sonido apagado</string>
     <string name="Back">Atrás</string>
     <string name="Draw">Empate!</string>
+    <string name="note">(Revierte el idioma)</string>
+
 
     <string-array name="list">
         <item>Español</item>
         <item>Français</item>
         <item>English</item>
+        <item>हिन्दी</item>
         <item>বাংলা</item>
         <item>中文</item>
     </string-array>

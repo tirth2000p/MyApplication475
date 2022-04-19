@@ -4,14 +4,12 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.media.AudioManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -31,17 +29,11 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
     private String lan;
     private boolean Sound = true;
     String SoundVal = "Sound: On";
-    boolean hide;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActionBar ACTIONbAR =   getSupportActionBar();
-        try {
-            ACTIONbAR.hide();
-        }
-        catch (NullPointerException e){
-            hide = false;
-        }
+        ACTIONbAR.hide();
         setContentView(R.layout.activity_settings_page);
 
         System.out.println("NewSettings");
@@ -65,8 +57,14 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
                     setLocale("zh");
                 }
 
-                else{
+                else if (lan.equalsIgnoreCase("English")){
                     setLocale("en");
+                }
+                else if(lan.equalsIgnoreCase("বাংলা")){
+                    setLocale("bn");
+                }
+                else if (lan.equalsIgnoreCase("हिन्दी")){
+                    setLocale("hi");
                 }
 
             }
