@@ -243,7 +243,6 @@ public class DABLayout extends View {
                         if ((fi[c] == fi[l] && fj[c] == fj[l] && si[c] == si[l] && sj[c] == sj[l]) || (fi[c] == si[l] && fj[c] == sj[l] && si[c] == fi[l] && sj[c] == fj[l])) {
                             fy[c] = sy[c];
                             fx[c] = sx[c];
-                            System.out.println("RETURNED");
                             return true;
                         }
                     }
