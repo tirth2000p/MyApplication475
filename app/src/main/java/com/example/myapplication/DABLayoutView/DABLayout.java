@@ -256,8 +256,6 @@ public class DABLayout extends View {
                         turn = 0;
                     c++;
                     print_player_turn();
-                    print_a();
-                    print_b();
                     update_text();
                     vibrator.vibrate(20);
                     return true;
@@ -299,8 +297,6 @@ public class DABLayout extends View {
             for (int j = 0; j < n-1; j++) {
                 if (a[i][j] == 4 && !winner_checker.contains(linearInt(i,j))) {
                     winner_checker.add(linearInt(i, j));
-
-                    print_a();
                     b[i][j] = turn;
                     winner_si[k] = si[c];
                     winner_sj[k] = sj[c];
@@ -316,10 +312,7 @@ public class DABLayout extends View {
                         p1Total++;
 
                     }
-
                     total++;
-
-                    print_winner_checker();
                     sound_effects.play(box_sound_int, 1, 1, 0, 0, 1);
                     flag = true;
                 }
@@ -435,33 +428,6 @@ public class DABLayout extends View {
             getContext().startActivity(i);
             ((Activity)getContext()).finish();
         }
-    }
-
-    private void print_a() {
-
-        for (int i = 0; i < n-1; i++) {
-            for (int j = 0; j < n-1; j++) {
-            }
-
-        }
-    }
-
-    private void print_b() {
-        for (int i = 0; i < n-1; i++) {
-            for (int j = 0; j < n-1; j++) {
-
-            }
-        }
-    }
-
-    private void print_winner_checker() {
-        System.out.println("WINNER CHECKER");
-
-        for(int x: winner_checker) {
-            System.out.print(x + " ");
-
-        }
-
     }
 
     private void print_player_turn() {
