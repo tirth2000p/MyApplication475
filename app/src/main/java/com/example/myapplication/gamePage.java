@@ -56,7 +56,7 @@ public class gamePage extends AppCompatActivity {
                         switch (item.getItemId())
                         {
                             case R.id.Reset:
-                                System.out.println("reset");
+                                
                                 Intent i = new Intent(getApplicationContext(),GameActivity.class);
                                 i.putExtra("var", grid_size);
                                 startActivity(i);
