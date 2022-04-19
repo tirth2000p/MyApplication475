@@ -116,7 +116,7 @@
             android:textColor="@color/colorAccent"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/theme"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.85"
             app:layout_constraintStart_toStartOf="@+id/theme"
             app:layout_constraintTop_toTopOf="@+id/theme" />
 
