@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_first_page);
 
-        
+
 
         Button button = findViewById(R.id.settings);
 
