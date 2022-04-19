@@ -269,19 +269,6 @@ public class DABLayout extends View {
     }
 
     private void drawLines(Canvas canvas) {
-        /*
-        boolean is_p1 = true;
-        for(int i = 0; i<c; i++) {
-            if (is_p1) {
-                canvas.drawLine(sx[i], sy[i], fx[i], fy[i], p1_color);
-                is_p1 = false;
-            }
-            else {
-                canvas.drawLine(sx[i], sy[i], fx[i], fy[i], p2_color);
-                is_p1 = true;
-            }
-        }
-         */
         int i = 0;
         for (int x:turn_keeper) {
             canvas.drawLine(sx[i], sy[i], fx[i], fy[i], player_colors[x]);
@@ -419,7 +406,6 @@ public class DABLayout extends View {
         if (c == 2*n*(n-1)) {
             sound_effects.play(winner_sound_int, 1,1,0,0,1);
             update_score();
-            print_names();
             Intent i = new Intent(getContext(), resultPage.class);
             i.putExtra("scores", scores);
             i.putExtra("names", names);
@@ -429,13 +415,7 @@ public class DABLayout extends View {
         }
     }
 
-    private void print_names() {
-        System.out.println("NAMES");
-        for (int i = 0; i < number_of_players; i++) {
-             System.out.print(names[i] + " ");
-        }
-        System.out.println();
-    }
+
 
     private void update_text() {
         //count.startAnimation(count_animation);
