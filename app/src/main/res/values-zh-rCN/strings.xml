@@ -17,7 +17,7 @@
 
     <string name="language_options">Custom Spinner</string>
 
-    <string name="player">P1 vs P2</string>
+    <string name="player">开始</string>
     <string name="Setting">设置</string>
     <string name="Version">版本 1.0</string>
     <string name="Move">移动次数</string>

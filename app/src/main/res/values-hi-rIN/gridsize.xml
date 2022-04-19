@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array
+        name="integer_array_name">
+        <item>३ x ३</item>
+        <item>४ x ४</item>
+        <item>५ X ५</item>
+        <item>६ X ६</item>
+        <item>७ X ७</item>
+    </array>
+</resources>
