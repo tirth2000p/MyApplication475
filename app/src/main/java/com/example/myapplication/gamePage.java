@@ -56,13 +56,13 @@ public class gamePage extends AppCompatActivity {
                         switch (item.getItemId())
                         {
                             case R.id.Reset:
-                                
+
                                 Intent i = new Intent(getApplicationContext(),GameActivity.class);
                                 i.putExtra("var", grid_size);
                                 startActivity(i);
                                 return true;
                             case R.id.Resize:
-                                System.out.println("resize");
+                                
                                 i = new Intent(getApplicationContext(),secondPage.class);
                                 startActivity(i);
                                 return true;
