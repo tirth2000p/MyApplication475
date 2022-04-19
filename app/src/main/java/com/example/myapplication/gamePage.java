@@ -62,19 +62,19 @@ public class gamePage extends AppCompatActivity {
                                 startActivity(i);
                                 return true;
                             case R.id.Resize:
-                                
+
                                 i = new Intent(getApplicationContext(),secondPage.class);
                                 startActivity(i);
                                 return true;
                             case R.id.Quit:
-                                System.out.println("quit");
+
                                 i = new Intent(getApplicationContext(),MainActivity.class);
                                 startActivity(i);
                                 return true;
                             default:
                                 return false;
                         }
-// commit check
+
 
                     }
                 });
