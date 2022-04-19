@@ -299,7 +299,7 @@ public class DABLayout extends View {
             for (int j = 0; j < n-1; j++) {
                 if (a[i][j] == 4 && !winner_checker.contains(linearInt(i,j))) {
                     winner_checker.add(linearInt(i, j));
-                    System.out.println("A in CHECK");
+
                     print_a();
                     b[i][j] = turn;
                     winner_si[k] = si[c];
@@ -307,13 +307,7 @@ public class DABLayout extends View {
                     winner_fi[k] = fi[c];
                     winner_fj[k] = fj[c];
                     repeat++;
-                    System.out.println("REPEAT IS " + repeat);
                     k++;
-
-                    // score cheaker
-
-                    System.out.println("player"+names[turn]);
-
                     if(names[turn].equalsIgnoreCase(this.getResources().getString(R.string.Score2))){
                         p2Total++;
 
