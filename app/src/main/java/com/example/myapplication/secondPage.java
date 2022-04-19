@@ -22,7 +22,7 @@ public class secondPage extends AppCompatActivity implements AdapterView.OnItemS
         ACTIONbAR.hide();
         setContentView(R.layout.activity_second_page);
 
-        
+
 
 
         Button button = findViewById(R.id.button);
@@ -57,8 +57,7 @@ public class secondPage extends AppCompatActivity implements AdapterView.OnItemS
                 spin = spinner.getSelectedItem().toString();
 
                 spin = spin.substring(0,1);
-                //Testing purpose
-                System.out.println(spin);
+                
                 int var = Integer.parseInt(spin);
                 System.out.println(var);
 
