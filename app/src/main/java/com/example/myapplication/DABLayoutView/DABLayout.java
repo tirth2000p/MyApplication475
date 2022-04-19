@@ -428,7 +428,6 @@ public class DABLayout extends View {
             sound_effects.play(winner_sound_int, 1,1,0,0,1);
             update_score();
             print_names();
-            System.out.println("PLAYER NUMBER" + number_of_players);
             Intent i = new Intent(getContext(), resultPage.class);
             i.putExtra("scores", scores);
             i.putExtra("names", names);
@@ -439,12 +438,11 @@ public class DABLayout extends View {
     }
 
     private void print_a() {
-        System.out.println("a");
+
         for (int i = 0; i < n-1; i++) {
             for (int j = 0; j < n-1; j++) {
-                System.out.print(a[i][j] + " ");
             }
-            System.out.println();
+
         }
     }
 
