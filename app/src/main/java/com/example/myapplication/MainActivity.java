@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActionBar ACTIONbAR =   getSupportActionBar();
-
+        //ACTIONbAR.hide();
         setContentView(R.layout.activity_first_page);
 
-
+        System.out.println("New Main");
 
         Button button = findViewById(R.id.settings);
 

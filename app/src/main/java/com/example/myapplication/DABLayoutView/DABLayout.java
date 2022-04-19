@@ -243,6 +243,7 @@ public class DABLayout extends View {
                         if ((fi[c] == fi[l] && fj[c] == fj[l] && si[c] == si[l] && sj[c] == sj[l]) || (fi[c] == si[l] && fj[c] == sj[l] && si[c] == fi[l] && sj[c] == fj[l])) {
                             fy[c] = sy[c];
                             fx[c] = sx[c];
+                            System.out.println("RETURNED");
                             return true;
                         }
                     }
@@ -255,6 +256,9 @@ public class DABLayout extends View {
                     if (turn == number_of_players)
                         turn = 0;
                     c++;
+                    print_player_turn();
+                    print_a();
+                    print_b();
                     update_text();
                     vibrator.vibrate(20);
                     return true;
@@ -269,6 +273,19 @@ public class DABLayout extends View {
     }
 
     private void drawLines(Canvas canvas) {
+        /*
+        boolean is_p1 = true;
+        for(int i = 0; i<c; i++) {
+            if (is_p1) {
+                canvas.drawLine(sx[i], sy[i], fx[i], fy[i], p1_color);
+                is_p1 = false;
+            }
+            else {
+                canvas.drawLine(sx[i], sy[i], fx[i], fy[i], p2_color);
+                is_p1 = true;
+            }
+        }
+         */
         int i = 0;
         for (int x:turn_keeper) {
             canvas.drawLine(sx[i], sy[i], fx[i], fy[i], player_colors[x]);
@@ -283,13 +300,21 @@ public class DABLayout extends View {
             for (int j = 0; j < n-1; j++) {
                 if (a[i][j] == 4 && !winner_checker.contains(linearInt(i,j))) {
                     winner_checker.add(linearInt(i, j));
+                    System.out.println("A in CHECK");
+                    print_a();
                     b[i][j] = turn;
                     winner_si[k] = si[c];
                     winner_sj[k] = sj[c];
                     winner_fi[k] = fi[c];
                     winner_fj[k] = fj[c];
                     repeat++;
+                    System.out.println("REPEAT IS " + repeat);
                     k++;
+
+                    // score cheaker
+
+                    System.out.println("player"+names[turn]);
+
                     if(names[turn].equalsIgnoreCase(this.getResources().getString(R.string.Score2))){
                         p2Total++;
 
@@ -298,11 +323,18 @@ public class DABLayout extends View {
                         p1Total++;
 
                     }
+
                     total++;
+                    System.out.println("total "+total);
+
+
+
+                    print_winner_checker();
                     sound_effects.play(box_sound_int, 1, 1, 0, 0, 1);
                     flag = true;
                 }
             }
+            System.out.println("REPEAT IS " + repeat);
         }
         return flag;
     }
@@ -406,6 +438,8 @@ public class DABLayout extends View {
         if (c == 2*n*(n-1)) {
             sound_effects.play(winner_sound_int, 1,1,0,0,1);
             update_score();
+            print_names();
+            System.out.println("PLAYER NUMBER" + number_of_players);
             Intent i = new Intent(getContext(), resultPage.class);
             i.putExtra("scores", scores);
             i.putExtra("names", names);
@@ -415,7 +449,50 @@ public class DABLayout extends View {
         }
     }
 
+    private void print_a() {
+        System.out.println("a");
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j < n-1; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 
+    private void print_b() {
+        System.out.println("b");
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j < n-1; j++) {
+                System.out.print(b[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    private void print_winner_checker() {
+        System.out.println("WINNER CHECKER");
+
+        for(int x: winner_checker) {
+            System.out.print(x + " ");
+
+        }
+
+    }
+
+    private void print_player_turn() {
+        System.out.println("PLAYER TURN");
+        for(int x : turn_keeper)
+            System.out.print(x + " ");
+
+    }
+
+    private void print_names() {
+        System.out.println("NAMES");
+        for (int i = 0; i < number_of_players; i++) {
+             System.out.print(names[i] + " ");
+        }
+        System.out.println();
+    }
 
     private void update_text() {
         //count.startAnimation(count_animation);
