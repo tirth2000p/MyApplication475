@@ -63,7 +63,7 @@ public class secondPage extends AppCompatActivity implements AdapterView.OnItemS
 
                 //String spin = spinner.getSelectedItem().toString();
 
-               
+
 
                 // good from here
                 //var = 2;

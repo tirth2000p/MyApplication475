@@ -36,7 +36,7 @@ public class settingsPage extends AppCompatActivity implements AdapterView.OnIte
         ACTIONbAR.hide();
         setContentView(R.layout.activity_settings_page);
 
-        System.out.println("NewSettings");
+        
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner); // gotta work on spinner settings
 
