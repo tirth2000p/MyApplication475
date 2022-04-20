@@ -35,9 +35,9 @@
     <string name="Back">পূর্ববর্তী</string>
     <string name="Draw">ড্র !</string>
     <string name="note">(ভাষা ফিরিয়ে দেয়)</string>
-    <string name="Reset">পুনরায় শুরু </string>
-    <string name="Resize">আকার পরিবর্তন </string>
-    <string name="Quit">প্রস্থান </string>
+    <string name="Reset">পুনরায় শুরু</string>
+    <string name="Resize">আকার পরিবর্তন</string>
+    <string name="Quit">প্রস্থান</string>
 
     <string-array name="list">
         <item>বাংলা</item>
