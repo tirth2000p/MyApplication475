@@ -1,7 +1,7 @@
 
 
 <resources>
-    <string name="app_name">Mon application</string>
+    <string name="app_name">Jeu carré</string>
     <string name="action_settings">Réglages</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Premier fragment</string>
@@ -34,9 +34,9 @@
     <string name="Back">Arrière</string>
     <string name="Draw">Dessiner!</string>
     <string name="note">(Rétablit la langue)</string>
-    <string name="Reset">Reset</string>
-    <string name="Resize">Resize</string>
-    <string name="Quit">Quit</string>
+    <string name="Reset">Réinitialiser</string>
+    <string name="Resize">Redimensionner</string>
+    <string name="Quit">Arrêter</string>
 
     <string-array name="list">
         <item>Français</item>
