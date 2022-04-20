@@ -1,7 +1,7 @@
 
 
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">স্কয়ার গেম</string>
     <string name="action_settings">সেটিংস</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">প্রথম খণ্ড</string>
