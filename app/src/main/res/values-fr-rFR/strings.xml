@@ -34,7 +34,9 @@
     <string name="Back">Arrière</string>
     <string name="Draw">Dessiner!</string>
     <string name="note">(Rétablit la langue)</string>
-
+    <string name="Reset">Reset</string>
+    <string name="Resize">Resize</string>
+    <string name="Quit">Quit</string>
 
     <string-array name="list">
         <item>Français</item>

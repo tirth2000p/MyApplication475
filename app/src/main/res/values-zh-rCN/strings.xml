@@ -36,7 +36,9 @@
     <string name="Back">后退</string>
     <string name="Draw">平局!</string>
     <string name="note">(重置语言)</string>
-
+    <string name="Reset">Reset</string>
+    <string name="Resize">Resize</string>
+    <string name="Quit">Quit</string>
 
 
     <string-array name="list">

@@ -34,7 +34,9 @@
     <string name="Back">पीछे</string>
     <string name="Draw">बराबरी!</string>
     <string name="note">(भाषा वापस बदलता है)</string>
-
+    <string name="Reset">Reset</string>
+    <string name="Resize">Resize</string>
+    <string name="Quit">Quit</string>
 
 
 

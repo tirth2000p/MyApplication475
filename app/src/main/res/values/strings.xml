@@ -34,7 +34,9 @@
     <string name="Back">Back</string>
     <string name="Draw">Draw!</string>
     <string name="note">(Reverts Language)</string>
-
+    <string name="Reset">Reset</string>
+    <string name="Resize">Resize</string>
+    <string name="Quit">Quit</string>
 
     <string-array name="list">
         <item>English</item>
