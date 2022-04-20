@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Study/CMSC 475/MyApplication475/app/src/main/res/layout-land/activity_second_page.xml" value="0.21208112874779542" />
         <entry key="..\:/Study/CMSC 475/MyApplication475/app/src/main/res/layout/activity_first_page.xml" value="0.25052083333333336" />
         <entry key="..\:/Study/CMSC 475/MyApplication475/app/src/main/res/layout/activity_game_page.xml" value="0.5" />
         <entry key="..\:/Study/CMSC 475/MyApplication475/app/src/main/res/layout/activity_result_page.xml" value="0.25052083333333336" />
@@ -29,7 +30,6 @@
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/fragment_second.xml" value="0.22192028985507245" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/layout/fragment_setting.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/menu/pop_menu.xml" value="0.19479166666666667" />
-        <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/MyApplication475/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_first_page.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_game_page.xml" value="0.13541666666666666" />
