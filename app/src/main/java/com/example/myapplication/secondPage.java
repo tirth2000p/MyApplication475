@@ -62,13 +62,7 @@ public class secondPage extends AppCompatActivity implements AdapterView.OnItemS
                 int var = Integer.parseInt(spin);
                 System.out.println(var);
 
-                //String spin = spinner.getSelectedItem().toString();
 
-                //System.out.println(spin);
-
-                // good from here
-                //var = 2;
-                //Intent i = new Intent(getActivity(), GameActivity.class);
                 Intent i = new Intent(getApplicationContext(),GameActivity.class);
                 i.putExtra("var", var);
                 startActivity(i);

@@ -72,9 +72,7 @@ public class resultPage extends AppCompatActivity {
                 winners.add(i);
 
         }
-//        if (i>1){
-//            draw = true;
-//        }
+
     }
 
     private void get_max() {
