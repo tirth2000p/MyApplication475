@@ -30,7 +30,6 @@ public class gamePage extends AppCompatActivity {
         actionBar.hide();
 
 
-
         if (getIntent().getExtras() != null) {
             grid_size = getIntent().getExtras().getInt("grid");
             number_of_players = getIntent().getExtras().getInt("players");
@@ -50,7 +49,6 @@ public class gamePage extends AppCompatActivity {
                 popupMenu.getMenu().add(Menu.NONE, R.id.Resize, 2, getString(R.string.Resize));
                 popupMenu.getMenu().add(Menu.NONE, R.id.Quit, 3, getString(R.string.Quit));
 
-//                popupMenu.getMenuInflater().inflate(R.menu.pop_menu, popupMenu.getMenu());
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
@@ -75,12 +73,10 @@ public class gamePage extends AppCompatActivity {
                             default:
                                 return false;
                         }
-// commit check
 
                     }
                 });
                 popupMenu.show();
-                //return false;
             }
         });
 
